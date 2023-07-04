@@ -1,6 +1,7 @@
 import React, { useContext, useState } from "react";
 import { UserContext } from "../Context";
 import Calendar from "../Calendar";
+import Razorpay from 'razorpay';
 
 export function CartItems() {
   const cartitems = useContext(UserContext);
@@ -15,6 +16,7 @@ export function CartItems() {
     }
     cartitems.setCartItems([...a]);
   };
+
   let removeItems = (id) => {
     console.log(id);
     let index = a.findIndex((cart) => cart._id == id);
@@ -24,11 +26,13 @@ export function CartItems() {
     }
     cartitems.setCartItems([...a]);
   };
+
   let removeFromCart = (id) =>{
     const indexVal= a.findIndex(obj => obj._id === id);
     a.splice(indexVal,1);
     cartitems.setCartItems([...a])
    }
+   
   var total = cartitems.CartItems.reduce((acc, curr) => {
     return (acc = acc + curr.price * curr.quantity * curr.hours);
   }, 0);
