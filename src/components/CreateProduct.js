@@ -77,7 +77,7 @@ export function CreateProduct() {
                 }`}
               />
               {formik.touched.name && formik.errors.name ? (
-                <span style={{ color: "red" }}>{formik.errors.name}</span>
+                <span style={{ color: "crimson" }}>{formik.errors.name}</span>
               ) : null}
             </div>
           </div>
@@ -99,7 +99,7 @@ export function CreateProduct() {
                 }`}
               />
               {formik.touched.price && formik.errors.price ? (
-                <span style={{ color: "red" }}>{formik.errors.price}</span>
+                <span style={{ color: "crimson" }}>{formik.errors.price}</span>
               ) : null}
             </div>
           </div>
@@ -121,7 +121,7 @@ export function CreateProduct() {
                 }`}
               />
               {formik.touched.image&& formik.errors.image ? (
-                <span style={{ color: "red" }}>{formik.errors.image}</span>
+                <span style={{ color: "crimson" }}>{formik.errors.image}</span>
               ) : null}
             </div>
           </div>
@@ -143,7 +143,7 @@ export function CreateProduct() {
                 }`}
               />
               {formik.touched.quantity && formik.errors.quantity ? (
-                <span style={{ color: "red" }}>{formik.errors.quantity}</span>
+                <span style={{ color: "crimson" }}>{formik.errors.quantity}</span>
               ) : null}
             </div>
           </div>
@@ -165,7 +165,7 @@ export function CreateProduct() {
                 }`}
               />
               {formik.touched.hours && formik.errors.hours ? (
-                <span style={{ color: "red" }}>{formik.errors.hours}</span>
+                <span style={{ color: "crimson" }}>{formik.errors.hours}</span>
               ) : null}
             </div>
           </div>

@@ -26,16 +26,16 @@ function ProductCard({ item }) {
         />
         <div className="card-body">
           <h5 className="card-title">Name : {item.name}</h5>
-          <p className="card-text">Price/Hr : {item.price}</p>
+          <p className="card-text">Price/per Hour : {item.price}</p>
           <button
-            className="btn btn-primary"
+            className="btn btn-success"
             disabled={CartItem.some((obj) => obj._id == item._id)}
             onClick={() => {
               Add(item._id);
             }}
           >
             {CartItem.some((obj) => obj._id == item._id)
-              ? "Added to card"
+              ? "Added to cart"
               : "add to cart"}
           </button>
         </div>

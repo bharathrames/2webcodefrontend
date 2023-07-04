@@ -58,10 +58,11 @@ export function Login() {
             <div className="col-lg-4 d-none d-lg-block">
               <img
                 className="bg-login-image"
-                src="https://png.pngtree.com/png-vector/20190718/ourmid/pngtree-set-of-construction-equipment-in-yellow-special-machines-for-the-building-png-image_1547117.jpg"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM1ejzeghchZYWxrP-1l2lHSWqpiSI9bnPjQ&usqp=CAU"
                 alt="login"
               />
             </div>
+          
             <div className="col-lg-7">
               <div className="p-5">
                 <div className="text-center">
@@ -89,7 +90,7 @@ export function Login() {
                       placeholder="Email Address"
                     />
                     {formik.touched.email && formik.errors.email ? (
-                      <span style={{ color: "red" }}>
+                      <span style={{ color: "crimson" }}>
                         {formik.errors.email}
                       </span>
                     ) : null}
@@ -116,19 +117,22 @@ export function Login() {
                         placeholder="Password"
                       />
                       {formik.touched.password && formik.errors.password ? (
-                        <span style={{ color: "red" }}>
+                        <span style={{ color: "crimson" }}>
                           {formik.errors.password}
                         </span>
                       ) : null}
                     </div>
                   </div>
                   <br />
+                  <div className="usercred">
                   <button
                     type={"submit"}
-                    className="btn btn-primary btn-md"
+                    className="btn btn-success btn-lg"
                   >
                   Login
-                  </button>
+                  </button><div><h5>User credentials
+                     Email:bharath@gmail.com Password:12345678</h5></div>
+                     </div>
                 </form>
               </div>
             </div>

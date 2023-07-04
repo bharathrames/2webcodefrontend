@@ -98,7 +98,7 @@ export function CartItems() {
                   <div className="row">
                     <div className="col-lg-2">
                       <button
-                        className="ml-3 btn btn-primary rounded-circle"
+                        className="ml-3 btn btn-danger rounded-circle"
                         onClick={() => {
                           removeItems(item._id);
                         }}
@@ -127,9 +127,9 @@ export function CartItems() {
                     onClick={() => {
                       removeFromCart(item);
                     }}
-                    className="badge bg-primary rounded-pill mt-5"
+                    className="badge bg-danger rounded-pill mt-5"
                   >
-                    X
+                    <span class="material-symbols-outlined">delete_forever</span>
                   </button>
               </tr>
             );
@@ -138,7 +138,7 @@ export function CartItems() {
       </table>
 
       <h3>Total Amount:{total}</h3>
-      <button onClick={finalOrder} className="btn btn-primary sm-1">
+      <button onClick={finalOrder} className="btn btn-success btn-lg">
         Place Order
       </button>
     </div>

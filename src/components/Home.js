@@ -4,7 +4,7 @@ import Topbar from "../Topbar";
 
 export function Home() {
   return (
-    <div>
+    <div className="home">
     <Topbar/>
       <div className="col-lg-12 align-middle">
         <h1 className="text-center" style={{ color: "Black", marginTop: "40px" }}>
@@ -16,7 +16,7 @@ export function Home() {
         <h6 className="text-center">
           <h3>Rental Products we provide</h3>
           <br />
-         <h2>light,tripod,Cameras,Speaker,monitor,Etc...</h2> 
+         <h2>Light,tripod,Cameras,Speaker,monitor,Etc...</h2> 
         </h6>
       </div>
       <div className="col-lg-12 text-center mt-5">

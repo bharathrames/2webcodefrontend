@@ -54,11 +54,11 @@ export function AddProduct() {
       <div className="card-header py-3">
             <Link
           to={"/create-product"}
-          className=" btn btn-primary"
+          className=" btn btn-info"
         >Create Product
         </Link>
           </div>
-        <button className='btn btn-danger' onClick={logout}>Logout</button>
+        <button className='btn btn-outline-danger' onClick={logout}>Logout</button>
       </div>
       {isLoading ?<Loading/> : (
         <div className="card shadow mb-4">
