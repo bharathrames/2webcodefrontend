@@ -4,6 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { Config } from '../Config';
 import Loading from "../Loading";
 
+
 export function AddProduct() {
   const [productList, setProductList] = useState([]);
   const [isLoading, setLoading] = useState(false);
